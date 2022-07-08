@@ -7,7 +7,7 @@ const Navbar = () => {
 
 	const handleToggle = () => {
 		toggle ? setToggle(false) : setToggle(true);
-		console.log(toggle);
+		//console.log(toggle);
 	};
 	return (
 		<nav>
@@ -24,12 +24,12 @@ const Navbar = () => {
 					</li>
 					<li>
 						<a href='' className='navbar__link'>
-							Media
+							Services
 						</a>
 					</li>
 					<li>
 						<a href='' className='navbar__link'>
-							Services
+							Media
 						</a>
 					</li>
 					<li>
@@ -45,5 +45,3 @@ const Navbar = () => {
 };
 
 export default Navbar;
-
-//{toggle?'navbar__links':'navbar__links navbar__links--show'}

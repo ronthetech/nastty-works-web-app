@@ -88,6 +88,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap");
+
 /*======= GLOBAL STYLES =======*/
 *,
 *::before,
@@ -132,23 +133,6 @@ nav {
 	background: var(--type-dark-dark);
 	box-shadow: var(--dark-shadow);
 }
-
-/*======= MEDIA QUERIES =======*/
-/* .navbar {
-	text-align: right;
-} */
-/*screen less than 867px*/
-/* @media (max-width: 867px) {
-	.navbar {
-		text-align: center;
-	}
-} */
-/*screen less than 600px*/
-/* @media (max-width: 600px) {
-	.navbar {
-		text-align: left;
-	}
-} */
 .navbar__header {
 	display: flex;
 	align-items: center;
@@ -208,6 +192,7 @@ nav {
 .navbar__links--show {
 	height: 20rem;
 }
+
 /*======= MEDIA QUERIES =======*/
 /*screen is at least 800px*/
 @media screen and (min-width: 800px) {
@@ -215,6 +200,28 @@ nav {
 		max-width: 1170px;
 		margin: 0 auto;
 		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		padding: 1rem;
+	}
+	.navbar__header {
+		padding: 0;
+	}
+	/*hides btn*/
+	.navbar__toggle {
+		display: none;
+	}
+	.navbar__links {
+		height: auto;
+		display: flex;
+	}
+	.navbar__link {
+		font-size: 3rem;
+	}
+	.navbar__link:hover,
+	.navbar__link:focus {
+		padding: 0;
+		background: transparent;
 	}
 	/*shows the socials when screen grows*/
 	.socials {
@@ -233,15 +240,35 @@ nav {
 	}
 }
 
-.isToggled {
-	color: red;
-}
-.isntToggled {
-	color: blue;
-}
-.newbtn {
-	height: 10rem;
-	width: 15rem;
-	cursor: pointer;
+/*======= MAIN =======*/
+main {
+	position: relative;
 }
 
+/*======= FOOTER =======*/
+footer {
+	background: var(--type-dark-dark);
+	box-shadow: var(--dark-shadow);
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 10rem;
+}
+footer .socials {
+	display: flex;
+}
+
+footer .socials__icon {
+	font-size: 4rem;
+	color: var(--primary-green-dark);
+	cursor: pointer;
+	transition: var(--transition);
+	margin: 0 0.5rem;
+}
+footer .socials__icon:hover,
+.socials__icon:focus {
+	color: var(--primary-green);
+}
