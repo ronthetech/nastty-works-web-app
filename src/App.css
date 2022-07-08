@@ -37,12 +37,12 @@
 	--grad-main-heading: linear-gradient(to left, #1a32b5, #fc306a 10%, #1a32b5);
 	--grad-background-re-blue: linear-gradient(to bottom, #4da1ab, #305170);
 	--grad-background-blue: linear-gradient(to bottom, #305170, #4da1ab);
-	--grad-background-form: linear-gradient(to bottom right, #70306a, #063251, #70306a);
+	--grad-background-form: linear-gradient(to bottom right, #228b22, #063251, #9acd32);
+	--grad-background-form-btn: linear-gradient(to bottom right, #9acd32, #228b22);
 	--grad-blue-green: linear-gradient(to bottom right, #305170, #6dfc6b);
 	--grad-green-blue: linear-gradient(to bottom right, #6dfc6b, #305170);
 	--grad-blue-purple: linear-gradient(to bottom right, rgb(6, 50, 181), #70306a);
 	--grad-purple-blue: linear-gradient(to bottom right, rgb(162, 48, 106), #063251);
-	--grad-li-purple-blue: linear-gradient(to bottom right, #fc306a, #1a32b5);
 	--grad-li-blue: linear-gradient(to bottom right, #1cadd9, #1a32b5);
 	--grad-grey-light: linear-gradient(to right bottom, rgba(#f7f7f7, 0.2), rgba(#eee, 0.2));
 	/* other colors */
@@ -247,8 +247,61 @@ main {
 
 /*======= FORM =======*/
 .form__container {
+	max-width: 60rem;
+	margin: 5rem auto;
+	padding: 1rem;
 }
 .form {
+	max-width: 60rem;
+	padding: 5rem;
+	background-image: var(--grad-background-form);
+	color: var(--clr-light-grey-4);
+	display: flex;
+	flex-direction: column;
+	gap: 2rem;
+	font-size: 2rem;
+	justify-content: center;
+	border-radius: 1rem;
+	font-family: "Lato", sans-serif;
+	box-shadow: var(--dark-shadow);
+}
+.form__name,
+.form__email,
+.form__number,
+.form__text {
+	display: block;
+	font-size: 2rem;
+	min-width: 35rem;
+	border-radius: 1rem;
+	padding-left: 1rem;
+	padding-top: 0.5rem;
+	padding-bottom: 0.5rem;
+}
+.form__text {
+	font-size: 2rem;
+	font-family: "Lato", sans-serif;
+}
+.form__btn {
+	background-image: var(--grad-background-form);
+	color: var(--clr-white);
+	font-size: 2rem;
+	border: 1px solid var(--clr-blue-1);
+	border-radius: 1rem;
+	text-align: center;
+	text-transform: uppercase;
+	padding: 0.5rem 1rem;
+	max-width: fit-content;
+	align-self: center;
+	transition: var(--transition);
+	box-shadow: var(--mid-shadow);
+}
+.form__btn:hover,
+.form__btn:focus {
+	background-image: var(--grad-background-form-btn);
+	cursor: pointer;
+	transform: translateY(-0.5rem);
+	box-shadow: var(--dark-shadow);
+	color: var(--clr-light-grey-4);
 }
 
 /*======= FOOTER =======*/
