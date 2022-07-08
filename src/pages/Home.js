@@ -1,7 +1,7 @@
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 
-const Contact = () => {
+const Home = () => {
 	return (
 		<div className='main'>
 			<Navbar />
@@ -10,4 +10,4 @@ const Contact = () => {
 	);
 };
 
-export default Contact;
+export default Home;

@@ -13,7 +13,6 @@
 
 	/*PRIMARY COLORS*/
 	--primary-green: #9acd32;
-
 	--primary-green-dark: #228b22;
 	/* grey / blue - used for headings */
 	--clr-grey-blue-1: #102a42;
@@ -243,6 +242,7 @@ nav {
 /*======= MAIN =======*/
 main {
 	position: relative;
+	height: 100%;
 }
 
 /*======= FOOTER =======*/
@@ -260,7 +260,6 @@ footer {
 footer .socials {
 	display: flex;
 }
-
 footer .socials__icon {
 	font-size: 4rem;
 	color: var(--primary-green-dark);
@@ -272,3 +271,4 @@ footer .socials__icon:hover,
 .socials__icon:focus {
 	color: var(--primary-green);
 }
+
