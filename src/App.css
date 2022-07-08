@@ -253,7 +253,7 @@ main {
 /*======= FORM =======*/
 .form__container {
 	max-width: 60rem;
-	margin: 5rem auto;
+	margin: 0 auto;
 	padding: 1rem;
 }
 .form__message--success {
@@ -264,6 +264,11 @@ main {
 	font-size: 2rem;
 	color: var(--clr-white);
 	text-align: center;
+}
+.empty--field {
+	font-size: 1.5rem;
+	color: var(--clr-bright-red);
+	font-weight: bold;
 }
 .form {
 	max-width: 60rem;
