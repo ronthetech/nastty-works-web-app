@@ -128,7 +128,7 @@ a {
 }
 
 /*======= NAVBAR =======*/
-.navbar {
+nav {
 	background: var(--type-dark-dark);
 	box-shadow: var(--dark-shadow);
 }

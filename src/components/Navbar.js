@@ -31,12 +31,14 @@ const Navbar = () => {
 						</a>
 					</li>
 					<li>
-						<a href='' className='navbar__link'>
-							Media
-						</a>
+						<NavLink to='/Media/'>
+							<a href='' className='navbar__link'>
+								Media
+							</a>
+						</NavLink>
 					</li>
 					<li>
-						<NavLink to='/contact/'>
+						<NavLink to='/Contact/'>
 							<a href='' className='navbar__link'>
 								Contact
 							</a>

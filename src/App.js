@@ -1,6 +1,7 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Home from "./pages/Home";
 import Contact from "./pages/Contact";
+import Media from "./pages/Media";
 import "./App.css";
 
 const App = () => {
@@ -8,7 +9,8 @@ const App = () => {
 		<div className='App'>
 			<Router>
 				<Routes>
-					<Route path='/contact/' element={<Contact />} />
+					<Route path='/Media/' element={<Media />} />
+					<Route path='/Contact/' element={<Contact />} />
 					<Route path='/' element={<Home />} />
 				</Routes>
 			</Router>
