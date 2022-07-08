@@ -128,7 +128,7 @@ a {
 }
 
 /*======= NAVBAR =======*/
-nav {
+.navbar {
 	background: var(--type-dark-dark);
 	box-shadow: var(--dark-shadow);
 }
@@ -243,6 +243,12 @@ nav {
 main {
 	position: relative;
 	height: 100%;
+}
+
+/*======= FORM =======*/
+.form__container {
+}
+.form {
 }
 
 /*======= FOOTER =======*/

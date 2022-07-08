@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { NavLink } from "react-router-dom";
 import { FaBars } from "react-icons/fa";
 import Socials from "./Socials";
 
@@ -13,7 +14,9 @@ const Navbar = () => {
 		<nav>
 			<div className='navbar'>
 				<div className='navbar__header'>
-					<h1 className='navbar__heading'>Nastty Works</h1>
+					<NavLink to='/'>
+						<h1 className='navbar__heading'>Nastty Works</h1>
+					</NavLink>
 					<FaBars onClick={handleToggle} className='navbar__toggle' />
 				</div>
 				<ul className={toggle ? "navbar__links" : "navbar__links navbar__links--show"}>
@@ -33,9 +36,11 @@ const Navbar = () => {
 						</a>
 					</li>
 					<li>
-						<a href='' className='navbar__link'>
-							Contact
-						</a>
+						<NavLink to='/contact/'>
+							<a href='' className='navbar__link'>
+								Contact
+							</a>
+						</NavLink>
 					</li>
 				</ul>
 				<Socials />
