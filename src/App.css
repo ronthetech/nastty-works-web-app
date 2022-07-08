@@ -17,8 +17,6 @@
 	/* grey / blue - used for headings */
 	--clr-grey-blue-1: #102a42;
 	--clr-grey-blue-2: #243a52;
-	--clr-grey-blue-3: #324d67;
-	--clr-grey-blue-4: #48647f;
 	/* light grey used for paragraphs */
 	--clr-light-grey-1: #617d98;
 	--clr-light-grey-2: #829ab0;
@@ -53,13 +51,12 @@
 	--clr-yellow-dark: #c7a008;
 	--clr-yellow-light: #ffdd64;
 	--clr-orange: #ff8f00;
-	--clr-pink: #fa709a;
 	--clr-red-dark: #bb2525;
 	--clr-red-light: #e66b6b;
 	--clr-green-dark: #25bb32;
 	--clr-green: #6df305;
 	--clr-green-light: #6be675;
-	--clr-bright-red: rgb(255, 0, 0);
+	--clr-bright-red: #ff0000;
 
 	--type-green: #99d98c;
 	--type-dark-green: #76c893;
@@ -67,20 +64,8 @@
 	--type-dark-red: #c9030a;
 	--type-blue: #1cadd9;
 	--type-dark-blue-card: #1f8ec1;
-	--type-yell: #ffd15c;
-	--type-dark-yell: #fcc55f;
 	--type-purple: #b379f6;
 	--type-dark-purple: #9b15f4;
-	--type-brown: #c38e6f;
-	--type-dark-brown: #bd764c;
-	--type-dark: #6c757d;
-	--type-dark-dark: #495057;
-	--type-gray: #dee2e6;
-	--type-dark-gray: #adb5bd;
-	--type-gold: #c4a36e;
-	--type-dark-gold: #b89151;
-	--gray-light-1: #f7f7f7;
-	--gray-light-2: #eee;
 }
 
 /*======= FONTS =======*/
@@ -129,7 +114,7 @@ a {
 
 /*======= NAVBAR =======*/
 nav {
-	background: var(--type-dark-dark);
+	background: #222;
 	box-shadow: var(--dark-shadow);
 }
 .navbar__header {
@@ -327,7 +312,7 @@ main {
 }
 /*======= FOOTER =======*/
 footer {
-	background: var(--type-dark-dark);
+	background: #222;
 	box-shadow: var(--dark-shadow);
 	position: absolute;
 	bottom: 0;
