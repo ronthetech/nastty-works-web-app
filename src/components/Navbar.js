@@ -21,27 +21,19 @@ const Navbar = () => {
 				</div>
 				<ul className={toggle ? "navbar__links" : "navbar__links navbar__links--show"}>
 					<li>
-						<a href='' className='navbar__link'>
-							Shop
-						</a>
+						<h3 className='navbar__link'>Shop</h3>
 					</li>
 					<li>
-						<a href='' className='navbar__link'>
-							Services
-						</a>
+						<h3 className='navbar__link'>Services</h3>
 					</li>
 					<li>
 						<NavLink to='/Media/'>
-							<a href='' className='navbar__link'>
-								Media
-							</a>
+							<h3 className='navbar__link'>Media</h3>
 						</NavLink>
 					</li>
 					<li>
 						<NavLink to='/Contact/'>
-							<a href='' className='navbar__link'>
-								Contact
-							</a>
+							<h3 className='navbar__link'>Contact</h3>
 						</NavLink>
 					</li>
 				</ul>

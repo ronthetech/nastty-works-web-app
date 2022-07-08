@@ -159,12 +159,13 @@ nav {
 }
 .navbar__toggle:hover,
 .navbar__toggle:focus {
-	transform: rotate(360deg);
+	transform: rotate(270deg);
 	color: forestgreen;
 }
 .navbar__link {
 	color: var(--clr-green-dark);
-	font-size: 2rem;
+	font-size: 3rem;
+	font-family: "Permanent Marker", cursive;
 	letter-spacing: var(--letter-space-sml);
 	padding: 1rem;
 	display: block;
@@ -173,7 +174,7 @@ nav {
 .navbar__link:hover,
 .navbar__link:focus {
 	color: var(--primary-green);
-	padding-left: 2rem;
+	padding-left: 5rem;
 	background: #222;
 }
 /*Hidden by default*/
@@ -189,7 +190,7 @@ nav {
 }
 /*toggled class to show links*/
 .navbar__links--show {
-	height: 20rem;
+	height: 25rem;
 }
 
 /*======= MEDIA QUERIES =======*/
@@ -213,14 +214,18 @@ nav {
 	.navbar__links {
 		height: auto;
 		display: flex;
+		padding-left: 1rem;
 	}
 	.navbar__link {
 		font-size: 3rem;
+		font-family: "Permanent Marker", cursive;
 	}
 	.navbar__link:hover,
-	.navbar__link:focus {
-		padding: 0;
+	.navbar__link:focus,
+	.navbar__link:active {
+		padding: 1rem;
 		background: transparent;
+		transform: translateY(-1rem);
 	}
 	/*shows the socials when screen grows*/
 	.socials {
@@ -251,6 +256,15 @@ main {
 	margin: 5rem auto;
 	padding: 1rem;
 }
+.form__message--success {
+	background-image: var(--grad-background-form-btn);
+	max-width: fit-content;
+	margin: 1rem auto;
+	padding: 1rem;
+	font-size: 2rem;
+	color: var(--clr-white);
+	text-align: center;
+}
 .form {
 	max-width: 60rem;
 	padding: 5rem;
@@ -269,7 +283,6 @@ main {
 .form__email,
 .form__number,
 .form__text {
-	display: block;
 	font-size: 2rem;
 	min-width: 35rem;
 	border-radius: 1rem;
@@ -294,16 +307,19 @@ main {
 	align-self: center;
 	transition: var(--transition);
 	box-shadow: var(--mid-shadow);
+	cursor: pointer;
 }
 .form__btn:hover,
-.form__btn:focus {
+.form__btn:active {
 	background-image: var(--grad-background-form-btn);
-	cursor: pointer;
 	transform: translateY(-0.5rem);
 	box-shadow: var(--dark-shadow);
 	color: var(--clr-light-grey-4);
 }
 
+.form__btn:focus {
+	border: 2px solid var(--grad-green-blue);
+}
 /*======= FOOTER =======*/
 footer {
 	background: var(--type-dark-dark);
@@ -321,13 +337,13 @@ footer .socials {
 }
 footer .socials__icon {
 	font-size: 4rem;
-	color: var(--primary-green-dark);
+	color: var(--primary-green);
 	cursor: pointer;
 	transition: var(--transition);
 	margin: 0 0.5rem;
 }
 footer .socials__icon:hover,
 .socials__icon:focus {
-	color: var(--primary-green);
+	color: var(--primary-green-dark);
 }
 
