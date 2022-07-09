@@ -25,11 +25,12 @@ const Form = () => {
 
 	const handleFormSubmit = (e) => {
 		e.preventDefault();
-		if (values.name && values.email && values.message) {
+		if (values.name && values.number && values.message) {
 			setValid(true);
 		}
 		setSubmitted(true);
 	};
+
 	return (
 		<div className='form__container'>
 			{submitted && valid ? <div className='form__message--success'>Success! We will get back to you as soon as possible!</div> : null}
@@ -44,8 +45,8 @@ const Form = () => {
 					type='tel'
 					value={values.number}
 					onChange={handleNumberInputChange}
-					pattern='[0-9]{3}-[0-9]{2}-[0-9]{3}'
-					placeholder='Phone Number'
+					pattern='[0-9]{3}-[0-9]{3}-[0-9]{4}'
+					placeholder='123-456-7890'
 				/>
 				{submitted && !values.number ? <span className='empty--field'>Please enter a phone number</span> : null}
 				<label htmlFor='formEmail'>Email Address</label>
@@ -58,8 +59,8 @@ const Form = () => {
 					onChange={handleEmailInputChange}
 					placeholder='Email Address'
 				/>
-				{submitted && !values.email ? <span className='empty--field'>Please enter an email address</span> : null}
-				<label htmlFor='formText'>Send A Message To Let Us Know What Service You Need!</label>
+				{/* {submitted && !values.email ? <span className='empty--field'>Please enter an email address</span> : null} */}
+				<label htmlFor='formText'>Message To Describe Service Needed</label>
 				<textarea
 					value={values.message}
 					onChange={handleMessageInputChange}

@@ -4,21 +4,21 @@ const Socials = () => {
 	return (
 		<ul className='socials'>
 			<li>
-				<a href='https://instagram.com/'>
+				<a href='https://www.instagram.com/nasttyworks/' rel='noreferrer noopener' target='_blank'>
 					<span className='socials__icon'>
 						<FaInstagram />
 					</span>
 				</a>
 			</li>
 			<li>
-				<a href='https://youtube.com/'>
+				<a href='https://youtube.com/' rel='noreferrer noopener' target='_blank'>
 					<span className='socials__icon'>
 						<FaYoutubeSquare />
 					</span>
 				</a>
 			</li>
 			<li>
-				<a href='https://facebook.com/'>
+				<a href='https://facebook.com/' rel='noreferrer noopener' target='_blank'>
 					<span className='socials__icon'>
 						<FaFacebookSquare />
 					</span>

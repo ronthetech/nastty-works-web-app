@@ -126,6 +126,8 @@ nav {
 }
 .navbar__heading {
 	font-family: "Permanent Marker", cursive;
+
+	font-weight: 500;
 	color: yellowgreen;
 	transition: var(--transition);
 	cursor: pointer;
@@ -135,7 +137,7 @@ nav {
 	color: forestgreen;
 }
 .navbar__toggle {
-	font-size: 4rem;
+	font-size: 3rem;
 	background: transparent;
 	border-color: transparent;
 	color: yellowgreen;
@@ -160,7 +162,8 @@ nav {
 .navbar__link:focus {
 	color: var(--primary-green);
 	padding-left: 5rem;
-	background: #222;
+	background: #111;
+	border-radius: 1rem;
 }
 /*Hidden by default*/
 .socials {
@@ -238,14 +241,14 @@ main {
 /*======= FORM =======*/
 .form__container {
 	max-width: 60rem;
-	margin: 0 auto;
+	margin: 0rem auto;
 	padding: 1rem;
 }
 .form__message--success {
 	background-image: var(--grad-background-form-btn);
 	max-width: fit-content;
-	margin: 1rem auto;
-	padding: 1rem;
+	margin: 0.5rem auto;
+	padding: 0.5rem;
 	font-size: 2rem;
 	color: var(--clr-white);
 	text-align: center;
@@ -262,7 +265,7 @@ main {
 	color: var(--clr-light-grey-4);
 	display: flex;
 	flex-direction: column;
-	gap: 2rem;
+	gap: 1rem;
 	font-size: 2rem;
 	justify-content: center;
 	border-radius: 1rem;
@@ -308,8 +311,11 @@ main {
 }
 
 .form__btn:focus {
-	border: 2px solid var(--grad-green-blue);
+	border: 3px solid var(--grad-green-blue);
+	box-shadow: var(--dark-shadow);
+	color: white;
 }
+
 /*======= FOOTER =======*/
 footer {
 	background: #222;
@@ -320,7 +326,7 @@ footer {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	height: 10rem;
+	height: 6rem;
 }
 footer .socials {
 	display: flex;

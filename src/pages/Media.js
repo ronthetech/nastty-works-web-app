@@ -1,11 +1,12 @@
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
+import MediaContent from "../components/MediaContent";
 
 const Media = () => {
 	return (
 		<div className='main'>
 			<Navbar />
-			<h1>MEDIA</h1>
+			<MediaContent />
 			<Footer />
 		</div>
 	);
