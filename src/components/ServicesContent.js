@@ -1,3 +1,5 @@
+import { NavLink } from "react-router-dom";
+
 const ServicesContent = () => {
 	return (
 		<div className='services__container'>
@@ -17,7 +19,11 @@ const ServicesContent = () => {
 				<li>and more!</li>
 			</ul>
 			<h4 className='services__message'>
-				If we cant handle your specific case, we know someone who can! Get in touch with us on the Contact page for more info
+				If we cant handle the job, we know someone who can! Get in touch with us on the{" "}
+				<NavLink className='services__link' to='/Contact/'>
+					Contact
+				</NavLink>{" "}
+				page for more info
 			</h4>
 		</div>
 	);

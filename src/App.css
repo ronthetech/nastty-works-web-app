@@ -275,6 +275,14 @@ nav {
 .services__message {
 	padding-top: 1rem;
 }
+.services__link {
+	color: black;
+}
+
+.services__link:hover,
+.services__link:focus {
+	color: black;
+}
 /*======= MAIN =======*/
 /* main {
 	position: relative;
