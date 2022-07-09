@@ -24,7 +24,9 @@ const Navbar = () => {
 						<h4 className='navbar__link'>Shop</h4>
 					</li>
 					<li>
-						<h4 className='navbar__link'>Services</h4>
+						<NavLink to='/Services/'>
+							<h4 className='navbar__link'>Services</h4>
+						</NavLink>
 					</li>
 					<li>
 						<NavLink to='/Media/'>

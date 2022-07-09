@@ -232,11 +232,38 @@ nav {
 	}
 }
 
+/*======= MAIN CONTENT =======*/
+.main {
+	text-align: center;
+}
+.main__heading {
+	font-family: "Permanent Marker", cursive;
+	font-weight: 500;
+	color: yellowgreen;
+	transition: var(--transition);
+	cursor: pointer;
+}
+.main__heading:focus,
+.main__heading:hover {
+	color: forestgreen;
+}
+
+/*======= SERVICES =======*/
+.services__container {
+	max-width: 60rem;
+	margin: 0rem auto;
+	padding: 1rem;
+	background-image: var(--grad-background-form);
+	border-radius: 1rem;
+	font-family: "Lato", sans-serif;
+	box-shadow: var(--dark-shadow);
+}
+
 /*======= MAIN =======*/
-main {
+/* main {
 	position: relative;
 	height: 100%;
-}
+} */
 
 /*======= FORM =======*/
 .form__container {
