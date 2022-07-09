@@ -4,11 +4,11 @@ import MainContent from "../components/MainContent";
 
 const Home = () => {
 	return (
-		<div className='main'>
+		<>
 			<Navbar />
 			<MainContent />
 			<Footer />
-		</div>
+		</>
 	);
 };
 

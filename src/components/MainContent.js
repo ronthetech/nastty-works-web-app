@@ -1,7 +1,8 @@
 const MainContent = () => {
 	return (
 		<div className='main'>
-			<h2 className='main__heading'>Welcome to Nastty Works</h2>
+			<h1 className='main__heading'>Welcome to Nastty Works</h1>
+			<h2 className='main__heading'>Mobile Mechanic</h2>
 			<h3>Merchandise is available for sale on the Shop Page, rep Nastty Works brand in style</h3>
 			<h3>Check us out across our Social Media pages! When we're not under the hood or jacking up a car, heres where you can find us! Stay in the Loop </h3>
 			<h3>

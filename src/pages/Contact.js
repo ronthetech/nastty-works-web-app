@@ -4,11 +4,11 @@ import Footer from "../components/Footer";
 
 const Contact = () => {
 	return (
-		<div className='main'>
+		<>
 			<Navbar />
 			<Form />
 			<Footer />
-		</div>
+		</>
 	);
 };
 

@@ -233,15 +233,15 @@ nav {
 }
 
 /*======= MAIN CONTENT =======*/
-/* .main {
+.main {
 	text-align: center;
-} */
+	min-height: 100vh;
+}
 .main__heading {
 	font-family: "Permanent Marker", cursive;
 	font-weight: 500;
 	color: yellowgreen;
 	transition: var(--transition);
-	cursor: pointer;
 }
 .main__heading:focus,
 .main__heading:hover {
