@@ -11,8 +11,6 @@ const ServicesContent = () => {
 				<li>control arms</li>
 				<li>tie rods</li>
 				<li>serpentine belts</li>
-				<li>expansion/coolant tanks</li>
-				<li>cooling system refresh</li>
 				<li>motor mounts</li>
 				<li>fender rolling</li>
 				<li>full adjustment</li>

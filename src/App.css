@@ -260,28 +260,33 @@ nav {
 	font-family: "Poppins", sans-serif;
 	box-shadow: var(--dark-shadow);
 	font-size: 2rem;
+	border: 1rem inset #102a42;
 }
 .services__heading {
 	font-weight: 500;
 	color: var(--clr-white);
 	padding: 1rem 0;
+	text-transform: uppercase;
 }
 .services__list {
 	display: flex;
 	flex-direction: column;
 	gap: 0.5rem;
 	align-items: center;
+	box-shadow: var(--light-shadow);
+	border: 0.5rem inset #102a42;
 }
 .services__message {
 	padding-top: 1rem;
 }
 .services__link {
-	color: black;
+	color: var(--clr-green-light);
+	transition: var(--transition);
 }
 
 .services__link:hover,
 .services__link:focus {
-	color: black;
+	color: var(--primary-green);
 }
 /*======= MAIN =======*/
 /* main {
