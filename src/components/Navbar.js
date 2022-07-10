@@ -21,7 +21,7 @@ const Navbar = () => {
 				</div>
 				<ul className={toggle ? "navbar__links" : "navbar__links navbar__links--show"}>
 					<li>
-						<NavLink to='/' className='navbar__link'>
+						<NavLink to='/Shop/' className='navbar__link'>
 							Shop
 						</NavLink>
 					</li>
