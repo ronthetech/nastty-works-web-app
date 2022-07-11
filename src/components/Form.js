@@ -20,7 +20,7 @@ const Form = () => {
 	return (
 		<div className='form__container'>
 			{submitted && valid ? <div className='form__message--success'>Success! We will get back to you as soon as possible!</div> : null}
-			<form className='form' onSubmit={handleFormSubmit}>
+			<form className='form' onSubmit={handleFormSubmit} name='contact' netlify>
 				<label htmlFor='formName'>Name</label>
 				<input
 					className='form__name'
