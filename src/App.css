@@ -516,6 +516,10 @@ nav {
 .media__item {
 	margin: 0 auto;
 }
+.media__gallery {
+	min-width: 60rem;
+	display: flex;
+}
 
 /*======= SHOP =======*/
 .shop__container {
