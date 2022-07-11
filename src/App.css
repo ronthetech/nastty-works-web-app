@@ -102,6 +102,24 @@ h4 {
 p {
 	font-size: 1.5;
 }
+@media screen and (max-width: 400px) {
+	h1 {
+		font-size: 4rem;
+	}
+	h2 {
+		font-size: 3rem;
+	}
+	h3 {
+		font-size: 2rem;
+	}
+	h4 {
+		font-size: 1.5rem;
+		font-weight: 500;
+	}
+	p {
+		font-size: 1;
+	}
+}
 ul {
 	list-style-type: none;
 	text-transform: uppercase;
@@ -268,8 +286,6 @@ nav {
 	border-radius: 1rem;
 	font-family: "Poppins", sans-serif;
 	box-shadow: var(--dark-shadow);
-	font-size: 2rem;
-	min-height: 50vh;
 }
 .services__heading {
 	font-weight: 500;
@@ -282,6 +298,20 @@ nav {
 	flex-direction: column;
 	gap: 1rem;
 	align-items: center;
+	font-size: 2rem;
+}
+@media screen and (max-width: 400px) {
+	.services__container {
+		padding: 0.5rem;
+		margin: 2rem 1rem 10rem 1rem;
+	}
+	.services__heading {
+		padding: 0.5rem 0;
+	}
+	.services__list {
+		font-size: 1.7rem;
+		gap: 0.5rem;
+	}
 }
 .services__message {
 	padding-top: 1rem;
@@ -490,10 +520,12 @@ nav {
 /*======= SHOP =======*/
 .shop__container {
 	margin: 0 auto;
+	height: 80vh;
+	display: flex;
+	flex-direction: column;
 }
 .shop__header {
 	text-align: center;
-	width: 50rem;
 	margin: 0 auto;
 	text-transform: uppercase;
 }
@@ -505,7 +537,7 @@ nav {
 .shop--coming--soon {
 	color: black;
 	font-family: "Poppins", sans-serif;
-	font-size: 6rem;
+	font-size: clamp(2rem, 6rem);
 }
 /*======= FOOTER =======*/
 footer {
