@@ -263,6 +263,14 @@ nav {
 .main {
 	text-align: center;
 	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
+	padding: 3rem;
+	gap: 1rem;
+}
+.main__header {
+	/* background-image: var(--grad-background-form); */
+	width: 100%;
 }
 .main__heading {
 	font-family: "Permanent Marker", cursive;
@@ -274,7 +282,21 @@ nav {
 .main__heading:hover {
 	color: forestgreen;
 }
-
+.main__link {
+	color: #1a32b5;
+	transition: var(--transition);
+}
+.main__link:hover,
+.main__link:focus {
+	color: var(--clr-green-dark);
+}
+.main__media {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin: 0 auto;
+	padding: 1rem 0;
+}
 /*======= SERVICES =======*/
 .services__container {
 	text-align: center;

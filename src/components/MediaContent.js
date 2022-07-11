@@ -17,20 +17,20 @@ const MediaContent = () => {
 			</div>
 			<div className='media__gallery'>
 				<div className='gallery__item'>
-					<img src='' alt='' srcset='' className='gallery__img' />
+					<img src='' alt='' srcSet='' className='gallery__img' />
 				</div>
 				<div className='gallery__item'>
-					<img src='' alt='' srcset='' className='gallery__img' />
+					<img src='' alt='' srcSet='' className='gallery__img' />
 				</div>
 			</div>
 			{/* <div className='media__archive'>
 			//link to archive with images matching year or topic
 				<div className='archive__item'>
-					<img src='' alt='' srcset='' className='archive__img' />
+					<img src='' alt='' srcSet='' className='archive__img' />
 					<p>Best Of 2021</p>
 				</div>
 				<div className='archive__item'>
-					<img src='' alt='' srcset='' className='archive__img' />
+					<img src='' alt='' srcSet='' className='archive__img' />
 					<p>Best Of Summer</p>
 				</div>
 			</div> */}
