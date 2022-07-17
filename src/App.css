@@ -265,7 +265,7 @@ nav {
 	min-height: 100vh;
 	display: flex;
 	flex-direction: column;
-	padding: 3rem;
+	padding: 5rem;
 	gap: 1rem;
 }
 .main__header {
@@ -532,7 +532,7 @@ nav {
 	justify-content: center;
 	margin: 0 auto;
 	padding: 2rem;
-	padding-bottom: 8rem;
+	padding-bottom: 10rem;
 	min-height: 90vh;
 	background-image: var(--grad-blue-green);
 }
